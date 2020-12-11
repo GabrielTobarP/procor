@@ -1,0 +1,289 @@
+@charset "UTF-8";
+body, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color:#707070;
+  font-family: "HelveticaNowDisplay Regular";
+}
+
+a {
+  color: #707070;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-decoration: none;
+  
+}
+
+a a:hover {
+  color: #FF521D;
+}
+
+a:-webkit-any-link {
+  color: #707070;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+h1{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1.7em;
+	
+	
+}
+
+
+h2{
+	
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 1.5em;
+	
+}
+
+
+h3{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1em;
+	
+}
+
+p{
+	
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 1em;
+	
+}
+
+
+
+
+
+
+.mainContainer{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	height: 88vh;
+	
+	
+}
+
+
+
+header{
+	grid-column: 1/7;
+	background-color: #707070;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.socialMediaIcons {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	align-items: center;
+}
+
+.logo {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 100px;
+	align-items: center;
+}
+
+
+
+main{
+	
+	grid-column: 1/5;
+	background-image: url("../images/fotoColumpio@2x.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 88vh;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+aside{
+	
+	grid-column: 5/7;
+	background-color: #FF521D;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	
+	
+}
+
+.asideContainer {
+	flex: 0 0 100%;
+	padding: 20px;
+}
+
+
+
+aside h2 {
+	
+	color: white;
+}
+
+aside p {
+	
+	color: white;
+	font-size: 0.8em;
+}
+
+footer {
+	
+	
+    align-items: flex-end; 
+	background-color: #1F1F1F;
+	height: 90px;
+	padding-top: 15px;
+	padding-left: 100px;
+}
+
+
+.pushFooterDownDiv {
+	 flex-grow: 1; 
+}
+
+#enterPassword {
+	width: 200px;
+	border-radius: 5px;
+	border: none;
+	height: 20px;
+	margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  
+.mainContainer{
+	
+	display: grid;
+	grid-template-columns: 1fr ;
+	height: auto;
+	
+	
+}
+
+
+
+header{
+	grid-column: 1/7;
+	background-color: #707070;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.socialMediaIcons {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+	align-items: center;
+}
+
+.logo {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 20px;
+	align-items: center;
+}
+
+
+
+main{
+	
+	grid-column: 1/2;
+	background-image: url("../images/fotoColumpioMobile@2x.png");
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	
+	
+	
+}
+
+
+aside{
+	
+	grid-column: 1/2;
+	background-color: #FF521D;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items:flex-start;
+	height: 100vh;
+	padding-top: 50px;
+	
+}
+.asideContainer {
+	flex: 0 0 100%;
+	padding: 20px;
+}
+
+
+
+aside h2 {
+	
+	color: white;
+}
+
+aside p {
+	
+	color: white;
+	font-size: 0.8em;
+}
+
+footer {
+	
+	
+    align-items: flex-end; 
+	background-color: #1F1F1F;
+	height: 90px;
+	padding-top: 17px;
+	text-align: center;
+}
+
+
+.pushFooterDownDiv {
+	 flex-grow: 1; 
+}
+
+#enterPassword {
+	width: 200px;
+	border-radius: 5px;
+	border: none;
+	height: 20px;
+	margin-bottom: 5px;
+}
+}
+
+

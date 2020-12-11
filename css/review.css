@@ -1,0 +1,850 @@
+@charset "UTF-8";
+body, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color:#707070;
+  font-family: "HelveticaNowDisplay Regular";
+	margin-bottom: 0px!important;
+}
+
+a {
+  color: #707070;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-decoration: none;
+  
+}
+
+a a:hover {
+  color: #FF521D;
+}
+
+a:-webkit-any-link {
+  color: #707070;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+h1{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1.7em;
+	
+	
+}
+
+
+h2{
+	
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 1.5em;
+	
+}
+
+
+h3{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1em;
+	
+}
+
+p{
+	
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 1em;
+	
+}
+
+
+
+
+
+
+.mainContainer{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	
+	
+	flex-grow: 1; 
+	flex-direction: column;
+}
+
+
+
+
+
+header{
+	grid-column: 1/7;
+	background-color: #707070;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.socialMediaIcons {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	align-items: center;
+}
+
+.logo {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 100px;
+	align-items: center;
+}
+
+
+
+
+main{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	grid-column: 1/7;
+	border-style: solid;
+	border-color: #707070;
+	border-radius: 9px;
+	border-width: 0.5px;
+	padding: 8px;
+	
+}
+
+html, body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+	
+}
+
+
+.label {
+	display: flex;
+	background-color: #FF521D;
+	flex-direction: row;
+    flex-wrap: wrap;
+	border-radius: 6px;
+	padding: 8px;
+	padding-bottom: 10px;
+	
+}
+
+.nameCompany {
+	padding-left: 10px;
+	width: 100%;
+	margin-bottom: 40px;
+	padding-top: 10px;
+}
+
+.nameProject {
+	padding-left: 10px;
+	flex: 8;
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.date {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 40px;
+}
+
+
+.nameProject h2{
+	
+	font-family: 'HelveticaNowDisplay Thin';
+	font-size: 1.7em;
+	color: white;
+	letter-spacing: 1px;
+	
+}
+
+
+ .nameCompany  h3{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: 1px;
+	
+}
+
+.date p{
+	
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 0.8em;
+	color: white;
+	
+}
+
+
+.phasesLabel {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 18px;
+}
+
+.phasesName {
+	flex: 6;
+	align-items: flex-start;
+}
+
+.refresh {
+	
+	
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	flex-wrap: nowrap;
+}
+
+.phasesName p {
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 1.2em;
+}
+
+.refresh p {
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 0.7em;
+	line-height: 1.1;
+}
+
+.progressContainer {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border-radius: 6px;
+	border-width: 0.5px;
+	margin-bottom: 10px!important;
+	
+}
+
+.phaseName {
+	flex: 3;
+	padding-top: 11px;
+}
+
+.barContainer {
+	flex: 2;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	margin-right: 150px;
+	padding-top: 6px;
+}
+
+.progress {
+	width: 100%;
+}
+
+
+.progress-bar {
+       
+    }
+
+.LastUpdatedLabel {
+	flex: 1;
+	margin-top: 5px;
+}
+
+.updatedDate {
+	
+	display: flex;
+	align-items: flex-end;
+	margin-top: 5px;
+}
+
+
+.LastUpdatedLabel p{
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	
+}
+
+.updatedDate p {
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	
+}
+
+
+.progressTotal {
+	
+	flex: 3;
+	padding-top: 11px;
+}
+
+.totalprogressContainer {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-radius: 6px;
+	background-color: #707070;
+	
+}
+
+.LastUpdatedLabelTotal {
+	flex: 1;
+	margin-top: 5px;
+}
+
+.updatedDateTotal {
+	
+	display: flex;
+	align-items: flex-end;
+	margin-top: 5px;
+}
+
+
+.LastUpdatedLabelTotal p{
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	color: white;
+
+}
+
+.updatedDateTotal p {
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	color: white;
+	
+}
+.progressTotal p{
+	
+	color:white;
+}
+
+.progress-barTotal{
+	
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: hidden;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+background-color: #FF521D!important;
+transition: width .6s ease;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+footer {
+	grid-column: 1/7;
+   	height: 100px;
+	background-color: #1F1F1F;
+	padding-top: 15px;
+	padding-left: 100px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  
+.mainContainer{
+	
+	display: grid;
+	grid-template-columns: 1fr ;
+	
+	
+	flex-grow: 1; 
+	flex-direction: column;
+}
+
+
+
+
+
+header{
+	grid-column: 1/2;
+	background-color: #707070;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.socialMediaIcons {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	align-items: center;
+}
+
+.logo {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 100px;
+	align-items: center;
+}
+
+
+
+
+main{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	grid-column: 1/2;
+	border-style: solid;
+	border-color: #707070;
+	border-radius: 9px;
+	border-width: 0.5px;
+	padding: 8px;
+	
+}
+
+html, body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+	
+}
+
+
+.label {
+	display: flex;
+	background-color: #FF521D;
+	flex-direction: row;
+    flex-wrap: wrap;
+	border-radius: 6px;
+	padding: 8px;
+	padding-bottom: 10px;
+	
+}
+
+.nameCompany {
+	padding-left: 10px;
+	width: 100%;
+	margin-bottom: 40px;
+	padding-top: 10px;
+}
+
+.nameProject {
+	padding-left: 10px;
+	flex: 8;
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.date {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 40px;
+}
+
+
+.nameProject h2{
+	
+	font-family: 'HelveticaNowDisplay Thin';
+	font-size: 1.7em;
+	color: white;
+	letter-spacing: 1px;
+	
+}
+
+
+ .nameCompany  h3{
+	
+	font-family: 'HelveticaNowDisplay Bold';
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: 1px;
+	
+}
+
+.date p{
+	
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 0.8em;
+	color: white;
+	
+}
+
+
+.phasesLabel {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 18px;
+}
+
+.phasesName {
+	flex: 6;
+	align-items: flex-start;
+}
+
+.refresh {
+	
+	
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	flex-wrap: nowrap;
+}
+
+.phasesName p {
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 1.2em;
+}
+
+.refresh p {
+	font-family: 'HelveticaNowDisplay Regular';
+	font-size: 0.7em;
+	line-height: 1.1;
+}
+
+.progressContainer {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border-radius: 6px;
+	border-width: 0.5px;
+	margin-bottom: 10px!important;
+	
+}
+
+.phaseName {
+	flex: 3;
+	padding-top: 11px;
+}
+
+.barContainer {
+	flex: 2;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	margin-right: 150px;
+	padding-top: 6px;
+}
+
+.progress {
+	width: 100%;
+}
+
+
+.progress-bar {
+       
+    }
+
+.LastUpdatedLabel {
+	flex: 1;
+	margin-top: 5px;
+}
+
+.updatedDate {
+	
+	display: flex;
+	align-items: flex-end;
+	margin-top: 5px;
+}
+
+
+.LastUpdatedLabel p{
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	
+}
+
+.updatedDate p {
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	
+}
+
+
+.progressTotal {
+	
+	flex: 3;
+	padding-top: 11px;
+}
+
+.totalprogressContainer {
+	
+	display: flex;
+	align-items:flex-start;
+	flex-direction: row;
+    flex-wrap: wrap;
+	padding: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-radius: 6px;
+	background-color: #707070;
+	
+}
+
+.LastUpdatedLabelTotal {
+	flex: 1;
+	margin-top: 5px;
+}
+
+.updatedDateTotal {
+	
+	display: flex;
+	align-items: flex-end;
+	margin-top: 5px;
+}
+
+
+.LastUpdatedLabelTotal p{
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	color: white;
+
+}
+
+.updatedDateTotal p {
+	font-family: 'HelveticaNowDisplay Light';
+	font-size: 0.8em;
+	color: white;
+	
+}
+.progressTotal p{
+	
+	color:white;
+}
+
+.progress-barTotal{
+	
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: hidden;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+background-color: #FF521D!important;
+transition: width .6s ease;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+  .modal-content {
+    width: 100%;
+}
+
+footer {
+	grid-column: 1/7;
+   	height: 100px;
+	background-color: #1F1F1F;
+	padding-top: 15px;
+	padding-left: 100px;
+	margin-top: 10px;
+}
+
+
+
+}
+
+
